@@ -36,19 +36,19 @@ package EmbeddedWebBrowser_Seattle;
 {$R 'EWB.dcr'}
 {$IFDEF IMPLICITBUILDING This IFDEF should not be used by users}
 {$ALIGN 8}
-{$ASSERTIONS OFF}
+{$ASSERTIONS ON}
 {$BOOLEVAL OFF}
 {$DEBUGINFO OFF}
 {$EXTENDEDSYNTAX ON}
 {$IMPORTEDDATA ON}
 {$IOCHECKS ON}
-{$LOCALSYMBOLS OFF}
+{$LOCALSYMBOLS ON}
 {$LONGSTRINGS ON}
 {$OPENSTRINGS ON}
 {$OPTIMIZATION OFF}
 {$OVERFLOWCHECKS OFF}
 {$RANGECHECKS OFF}
-{$REFERENCEINFO OFF}
+{$REFERENCEINFO ON}
 {$SAFEDIVIDE OFF}
 {$STACKFRAMES ON}
 {$TYPEDADDRESS OFF}
@@ -85,8 +85,6 @@ contains
   IEDownloadAcc in '..\Source\IEDownloadAcc.pas',
   IETravelLog in '..\Source\IETravelLog.pas',
   ImportFavorites in '..\Source\ImportFavorites.pas',
-  LibXmlComps in '..\Source\LibXmlComps.pas',
-  LibXmlParser in '..\Source\LibXmlParser.pas',
   LinksBar in '..\Source\LinksBar.pas',
   RichEditBrowser in '..\Source\RichEditBrowser.pas',
   SecurityManager in '..\Source\SecurityManager.pas',
@@ -100,7 +98,6 @@ contains
   Browse4Folder in '..\Source\Browse4Folder.pas',
   FileExtAssociate in '..\Source\FileExtAssociate.pas',
   LinksLabel in '..\Source\LinksLabel.pas',
-  IeConst in '..\Source\IeConst.pas',
   EwbAcc in '..\Source\EwbAcc.pas',
   EwbTools in '..\Source\EwbTools.pas',
   DirMonitor in '..\Source\DirMonitor.pas',
@@ -127,6 +124,9 @@ contains
   EwbControlComponent in '..\Source\EwbControlComponent.pas',
   EwbMouseHook in '..\Source\EwbMouseHook.pas',
   EwbFocusControl in '..\Source\EwbFocusControl.pas',
-  EwbLibXmlParser in '..\Source\EwbLibXmlParser.pas';
+  EwbLibXmlParser in '..\Source\EwbLibXmlParser.pas',
+  EWB.IEConst in '..\Source\EWB.IEConst.pas',
+  Wcrypt2 in '..\Source\Wcrypt2.pas',
+  EwbLibXmlComps in '..\Source\EwbLibXmlComps.pas';
 
 end.

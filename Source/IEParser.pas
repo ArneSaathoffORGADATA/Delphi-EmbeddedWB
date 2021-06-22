@@ -626,7 +626,7 @@ begin
     Doc := nil;
   if Assigned(All) then
     All := nil;
-  FreeAndNil(Element);
+  Element := Default(TElementInfo);
   FUrl := EmptyStr;
   FBusy := False;
   Finalize;
